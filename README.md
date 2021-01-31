@@ -1,12 +1,12 @@
 # express_vue_integration
 
 frontend : vue3
-@vue/cli 로 뷰 프로젝트 설치
++ @vue/cli 로 뷰 프로젝트 설치
 ```
 vue create myapp
 ```
 
-voe-router 추가
++voe-router 추가
 ```
 yarn add vue-router
 ```
@@ -35,8 +35,8 @@ module.exports = {
 
 backend : express
 
-express-generator 로 express 설치
-npm 으로 pkg 설치
++ express-generator 로 express 설치
++ npm 으로 pkg 설치
 ```
 npm i -g express-generator
 express --view=pug backend
@@ -46,7 +46,7 @@ npm install
 DEBUG=backend:* npm start
 ```
 
-라우터가 프론트엔트에서 webpack이 만든 인덱스파일을 response로 보내도록 함
++ 라우터가 프론트엔트에서 webpack이 만든 인덱스파일을 response로 보내도록 함
 ```
 router.get('/', function(req, res, next) {
   res.sendFile(path.join(__dirname, '../public/index.html'))
