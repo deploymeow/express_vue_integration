@@ -3,7 +3,7 @@
 frontend : vue3
 + @vue/cli 로 뷰 프로젝트 설치
 ```
-vue create myapp
+vue init webpack myapp
 ```
 
 +voe-router 추가
