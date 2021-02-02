@@ -33,6 +33,24 @@ module.exports = {
 }
 ```
 
++ main.js 에서 axios 설정
+```
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import axios from 'axios'
+
+Vue.config.productionTip = false
+Vue.prototype.$http = axios
+
+new Vue({
+  router,
+  render: h => h(App)
+}).$mount('#app')
+
+```
+
+
 backend : express
 
 + express-generator 로 express 설치
